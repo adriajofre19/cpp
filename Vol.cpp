@@ -1,4 +1,5 @@
 #include "Vol.h"
+#include <iostream>
 
 Vol::Vol(int id, int hora, int minut, char tipus) 
     :id(id), hora(hora), minut(minut), tipus(tipus)
@@ -22,3 +23,6 @@ char Vol::get_tipus() const {
     return tipus;
 }
 
+void Vol::print() const {
+    cout << id << " " << tipus << " " << hora << ":" << minut << endl;
+}

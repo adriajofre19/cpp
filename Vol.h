@@ -19,6 +19,7 @@ public:
     int get_minut() const;
     char get_tipus() const;
 
+    void print() const;
 };
 
 #endif
