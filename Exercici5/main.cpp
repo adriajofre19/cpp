@@ -5,8 +5,14 @@
 
 using namespace std;
 
-void imprimir_help() {
-    
+void imprmir_help() {
+    cout << "Us: ./e5 [-h] | [-m] [-r <int>] [-i <int>] fitxer\n\n"
+         << "Opcions:\n"
+         << "-h, --help   Mostra aquest missatge i surt\n"
+         << "-m           Cerca la solucio que minimitza el nombre de portes\n"
+         << "-r <int>     Nombre de portes regionals (default 3)\n"
+         << "-i <int>     Nombre de portes internacionals (default 2)\n\n"
+         << "fitxer       Fitxer de text amb els vols\n";
 }
 
 int main() {
@@ -14,6 +20,8 @@ int main() {
         Vol v(i,'i',10,30);
         v.imprimir_vol();
     }
+
+    cout << "------------------------" << endl;
 
     // Prova de la classe Candidats amb enters
     list<int> nums = {10, 20, 30, 40};
