@@ -1,10 +1,15 @@
 #include <iostream>
 #include "Vol.h"
+#include "Candidats.h"
 
 using namespace std;
 
 int main() {
-    Vol v(1,10,30,'i');
-    v.print();
+    
+    for(int i = 0; i < 10; i++) {
+        Vol v(i,'i',10,30);
+        v.imprimir_vol();
+    }
+    
     return 0;
 }

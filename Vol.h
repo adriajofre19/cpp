@@ -1,25 +1,29 @@
 #ifndef VOL_H
 #define VOL_H
-
 #include <string>
+
 using namespace std;
 
-class Vol {
-private:
-    int id, hora, minut;
-    char tipus;
-
+class Vol
+{
 public:
-    // Constructor
-    Vol(int id, int hora, int minut, char tipus);
+    Vol(int id, char tipus, int hores, int minuts);
 
     // Getters
     int get_id() const;
-    int get_hora() const;
-    int get_minut() const;
     char get_tipus() const;
+    int get_hores() const;
+    int get_minuts() const;
 
-    void print() const;
+    int getMinutsTotals() const;
+
+    void imprimir_vol() const;
+
+private:
+    int id;
+    char tipus;   // 'r' o 'i'
+    int hores;
+    int minuts;
 };
 
-#endif
+#endif // VOL_H
