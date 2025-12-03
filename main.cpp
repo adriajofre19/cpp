@@ -15,7 +15,7 @@ int main() {
     list<int> nums = {10, 20, 30, 40};
     Candidats<int> c(nums);
     while (!c.fi()) {
-        std::cout << "  actual = " << c.actual() << '\n';
+        cout << "  actual = " << c.actual() << '\n';
         c.seguent();
     }
 
