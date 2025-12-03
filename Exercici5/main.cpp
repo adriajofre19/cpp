@@ -5,6 +5,10 @@
 
 using namespace std;
 
+void imprimir_help() {
+    
+}
+
 int main() {
     for(int i = 0; i < 10; i++) {
         Vol v(i,'i',10,30);
@@ -18,6 +22,8 @@ int main() {
         cout << "  actual = " << c.actual() << '\n';
         c.seguent();
     }
+
+    cout << "------------------------" << endl;
 
     return 0;
 }
